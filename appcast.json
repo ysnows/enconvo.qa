@@ -2,6 +2,12 @@
   "identifier": "enconvo.qa",
   "versions": [
     {
+      "version": "0.0.2",
+      "desc": "feat: 1. init",
+      "url": "https://github.com/ysnows/enconvo.qa/releases/download/v0.0.2/enconvo.qa.enconvoplugin",
+      "minAppVersion": "1.1.8"
+    },
+    {
       "version": "0.0.1",
       "desc": "feat: 1. init",
       "url": "https://github.com/ysnows/enconvo.qa/releases/download/v0.0.1/enconvo.qa.enconvoplugin",
