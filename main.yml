@@ -1,0 +1,65 @@
+name: Q&A
+version: 0.0.1
+author: ''
+on: {}
+steps:
+- name: ''
+  uses: prompt
+  env:
+    Messages:
+      type: messages
+      value: ''
+      sort: 2
+      messages:
+      - role: system
+        content: 'Use the provided articles delimited by triple quotes to answer questions.
+          If the answer cannot be found in the articles, write "I could not find an answer."'
+      - role: user
+        content: '{{contextText|copiedText}}'
+      - role: user
+        content: '{{text}}'
+    Model:
+      type: llmModel
+      value: llm.default|--|default
+      sort: 0
+      messages: []
+    Temperature:
+      type: temperature
+      value: '1.0'
+      sort: 1
+      messages: []
+  stream: false
+  inputType: single
+extensionId: enconvo.qa
+logo: sparkles
+description: Answer questions based on selected text
+async: false
+homePage: ''
+appCast: ''
+minAppVersion: 0.0.1
+flowType: chain
+options:
+- title: General
+  items:
+  - identifier: Alias
+    type: text
+    title: Alias
+    defaultValue: ''
+    menuValues: []
+    desc: ''
+    placeholderText: Add alias
+    textWidth: 1.6e+2
+    disable: false
+  - identifier: Hotkey
+    type: hotkey
+    title: Hotkey
+    defaultValue: ''
+    menuValues: []
+    desc: "This shortcut will open an ai conversation window from anywhere in the
+      system\n      . Make sure it is not conflicting with other global shortcuts."
+    placeholderText: Add a hotkey to global start
+    textWidth: 1.6e+2
+    disable: false
+  desc: ''
+  identifier: ''
+sort: 200
