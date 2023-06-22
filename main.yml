@@ -34,9 +34,9 @@ extensionId: enconvo.qa
 logo: sparkles
 description: Answer questions based on selected text
 async: false
-homePage: ''
-appCast: ''
-minAppVersion: 0.0.1
+homePage: https://github.com/ysnows/enconvo.qa
+appCast: https://raw.githubusercontent.com/ysnows/enconvo.qa/main/appcast.json
+minAppVersion: 1.2.1
 flowType: chain
 options:
 - title: General
